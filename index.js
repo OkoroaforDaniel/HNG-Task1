@@ -4,8 +4,6 @@ const dayOfWeek = daysOfWeek[currentDate.getDay()];
 
 document.getElementById("DayOfWeek").innerHTML = dayOfWeek;
 
-setInterval(() =>{
-let d = new Date();
-
-document.getElementById("currentTime").innerHTML = d.toLocaleTimeString();
-},1000)
+let new_time = new Date().getTime();
+let currentUTCTime = document.getElementById("currentTime");
+currentUTCTime.innerHTML = new_time;
